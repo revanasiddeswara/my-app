@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import FileDropZone from './component/Home';
+import './App.css'; // Import a CSS file with global styles
+import Home from './component/Home';
+import background from "./Abstract-Network-Background_07.jpg";
 
-function App() {
+const App = () => {
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+  };
+
+  const rootStyle = {
+    backgroundImage: `url(${background})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    // height: '100%',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={rootStyle}>
+      <div style={containerStyle}>
+        <Home style={{marginTop:"50%"}}/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+html, body {
+  height: 100%;
+}
+
+body {
+ 
+  background-image: url('./Abstract-Network-Background_07.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
